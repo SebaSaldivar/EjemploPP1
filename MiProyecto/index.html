@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git & GitHub Ejemplo</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Git & GitHub Sitio de ejemplo</h1>
+    <p class="mt-4">
+      <strong>Git</strong> es un sistema de control de versiones que te permite gestionar y hacer seguimiento de los cambios realizados en el código fuente de un proyecto. Es ideal para trabajar de manera colaborativa, ya que permite que múltiples personas trabajen en el mismo proyecto sin sobrescribir el trabajo de los demás.
+    </p>
+    <p>
+      <strong>GitHub</strong> es una plataforma en línea que permite almacenar proyectos Git en la nube. No solo es útil para respaldar tu código, sino también para colaborar con otros desarrolladores de forma remota.
+    </p>
+    
+    <h2>Pasos básicos para usar Git y GitHub</h2>
+    
+    <ol>
+      <li><strong>Inicializar un repositorio Git:</strong></li>
+      <p>En la terminal, navega a tu carpeta del proyecto y ejecuta el siguiente comando para inicializar un repositorio local:</p>
+      <pre><code>git init</code></pre>
+
+      <li><strong>Agregar archivos al área de preparación:</strong></li>
+      <p>Después de hacer cambios en tus archivos, debes prepararlos para el commit con:</p>
+      <pre><code>git add .</code></pre>
+
+      <li><strong>Realizar un commit:</strong></li>
+      <p>El commit guarda una "instantánea" de tu proyecto. Escribe un mensaje claro describiendo los cambios:</p>
+      <pre><code>git commit -m "Mensaje descriptivo"</code></pre>
+
+      <li><strong>Crear un repositorio en GitHub:</strong></li>
+      <p>Ve a <a href="https://github.com/" target="_blank">GitHub</a> y crea un nuevo repositorio. Copia la URL del repositorio.</p>
+
+      <li><strong>Vincular el repositorio local con GitHub:</strong></li>
+      <p>En la terminal, vincula tu repositorio local con el remoto en GitHub usando el siguiente comando:</p>
+      <pre><code>git remote add origin https://github.com/tu-usuario/tu-repositorio.git</code></pre>
+
+      <li><strong>Subir tu proyecto a GitHub:</strong></li>
+      <p>Finalmente, sube tu proyecto con:</p>
+      <pre><code>git push -u origin master</code></pre>
+    </ol>
+    
+    <p>¡Y listo! Ahora nuestro proyecto está disponible en GitHub y podemos seguir haciendo cambios, comitearlos y enviarlos con <code>git push</code>.</p>
+    
+    <button id="myButton" class="btn btn-primary mt-4">Click Me</button>
+  </div>
+
+</body>
+</html>
